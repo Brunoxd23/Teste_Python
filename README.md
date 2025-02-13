@@ -26,10 +26,12 @@ Este projeto é uma API simples desenvolvida com Flask que fornece dois endpoint
 
 ### Configurando o Ambiente Virtual (venv)
 
+é uma boa prática criar um ambiente virtual!
+
  1. Clone o repositório:
 
- git clone [URL_DO_SEU_REPOSITORIO]
- cd [NOME_DO_PROJETO]
+ git clone [https://github.com/Brunoxd23/Teste_Python.git]
+ cd [Teste_Python]
 
  2. Crie o ambiente virtual:
 
@@ -137,4 +139,3 @@ python app.py
 "numero2": 20
 }
 // Resultado: {"resultado": 10}
-
