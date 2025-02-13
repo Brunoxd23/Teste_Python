@@ -78,7 +78,7 @@ python app.py
 4. Resposta esperada:
 
 {
-"mensagem": "Olá, Maria! Bem-vindo(a)!"
+ "mensagem": "Olá, Maria! Bem-vindo(a)! à API Flask"
 }
 
 
