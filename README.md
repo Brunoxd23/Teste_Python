@@ -9,7 +9,7 @@ Este projeto é uma API simples desenvolvida com Flask que fornece dois endpoint
 - **Método**: GET
 - **Parâmetro**: `nome` (opcional)
 - **Exemplo de uso**: `/saudacao?nome=Maria`
-- **Resposta**: Retorna uma mensagem de saudação personalizada em formato JSON
+- **Resposta**: Retorna uma mensagem de saudação personalizada em formato JSON  "mensagem": "Olá, Maria! Bem-vindo(a)! à API Flask"
 
 ### 2. Endpoint de Soma (POST)
 - **Rota**: `/soma`
