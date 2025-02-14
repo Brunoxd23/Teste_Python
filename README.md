@@ -26,7 +26,7 @@ Este projeto é uma API simples desenvolvida com Flask que fornece dois endpoint
 
 ### Configurando o Ambiente Virtual (venv)
 
-é uma boa prática criar um ambiente virtual!
+Usei um Ambiente Virtual “VENV” Virtual Environment como uma boa prática.
 
  1. Clone o repositório:
 
