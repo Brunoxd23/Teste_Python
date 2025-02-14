@@ -22,4 +22,4 @@ def soma():
         return jsonify({'erro': 'Por favor, envie dois números válidos no formato JSON'}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True) 
+    app.run(debug=True, host='0.0.0.0') 

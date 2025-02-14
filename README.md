@@ -139,3 +139,22 @@ python app.py
 "numero2": 20
 }
 // Resultado: {"resultado": 10}
+
+
+## 🐳 Docker
+
+### Construindo e Rodando com Docker
+
+1. Construa a imagem:
+```bash
+docker build -t flask-api .
+```
+
+2. Execute o container:
+```bash
+docker run -p 5000:5000 flask-api
+```
+
+3. Acesse a API em:
+- http://localhost:5000/saudacao
+- http://localhost:5000/soma (POST)
