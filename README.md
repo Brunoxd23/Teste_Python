@@ -153,6 +153,9 @@ docker build -t flask-api .
 2. Execute o container:
 ```bash
 docker run -p 5000:5000 flask-api
+
+# Rodar com nome específico
+docker run --name api-flask -p 5000:5000 flask-api
 ```
 
 3. Acesse a API em:

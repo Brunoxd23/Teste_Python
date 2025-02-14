@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/saudacao', methods=['GET'])
 def saudacao():
     nome = request.args.get('nome', 'Visitante')
-    return jsonify({'mensagem': f'Olá, {nome}! Bem-vindo(a)!'})
+    return jsonify({'mensagem': f'Olá, {nome}! Bem-vindo(a) ao teste da API Flask!'})
 
 # Endpoint POST para soma
 @app.route('/soma', methods=['POST'])
