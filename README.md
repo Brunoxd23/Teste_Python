@@ -9,7 +9,7 @@ Este projeto é uma API simples desenvolvida com Flask que fornece dois endpoint
 - **Método**: GET
 - **Parâmetro**: `nome` (opcional)
 - **Exemplo de uso**: `/saudacao?nome=Maria`
-- **Resposta**: Retorna uma mensagem de saudação personalizada em formato JSON  "mensagem": "Olá, Maria! Bem-vindo(a)! à API Flask"
+- **Resposta**: Retorna uma mensagem de saudação personalizada em formato JSON
 
 ### 2. Endpoint de Soma (POST)
 - **Rota**: `/soma`
@@ -26,7 +26,7 @@ Este projeto é uma API simples desenvolvida com Flask que fornece dois endpoint
 
 ### Configurando o Ambiente Virtual (venv)
 
-Usei um Ambiente Virtual “VENV” Virtual Environment como uma boa prática.
+é uma boa prática criar um ambiente virtual!
 
  1. Clone o repositório:
 
@@ -78,7 +78,7 @@ python app.py
 4. Resposta esperada:
 
 {
- "mensagem": "Olá, Maria! Bem-vindo(a)! à API Flask"
+"mensagem": "Olá, Maria! Bem-vindo(a)!"
 }
 
 
@@ -158,3 +158,25 @@ docker run -p 5000:5000 flask-api
 3. Acesse a API em:
 - http://localhost:5000/saudacao
 - http://localhost:5000/soma (POST)
+
+
+benefícios do Dockerfile no nosso projeto:
+1. Portabilidade:
+Roda em qualquer máquina com Docker
+Mesmo ambiente garantido
+Não precisa instalar Python ou dependências
+Acessibilidade:
+Acesso via rede local (0.0.0.0)
+Funciona em:
+Computadores na mesma rede
+Celulares no mesmo WiFi
+Tablets ou outros dispositivos
+3. Facilidade de Distribuição:
+Vantagens para Desenvolvimento:
+Ambiente isolado e consistente
+Fácil de compartilhar com a equipe
+Evita problemas de "na minha máquina funciona"
+Endpoints Acessíveis:
+GET: http://[IP]:5000/saudacao
+POST: http://[IP]:5000/soma
+Funciona em qualquer dispositivo na rede
