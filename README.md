@@ -17,6 +17,38 @@ Este projeto é uma API simples desenvolvida com Flask que fornece dois endpoint
 - **Corpo da requisição**: JSON com dois números
 - **Exemplo de corpo**: `{"numero1": 10, "numero2" 10: 20}`
 
+### 3. Endpoints de Teste de Performance (GET)
+
+#### Endpoint Assíncrono
+- **Rota**: `/async-test`
+- **Método**: GET
+- **Explicação**: Executa 3 chamadas em paralelo (tempo total ≈ 3s)
+- **Resposta**:
+```json
+{
+    "modo": "assíncrono",
+    "resultados": ["Resultado após 1s", "Resultado após 2s", "Resultado após 3s"],
+    "tempo_total": 3.012,
+    "explicacao": "Todas as chamadas executadas em paralelo"
+}
+```
+
+#### Endpoint Síncrono
+- **Rota**: `/sync-test`
+- **Método**: GET
+- **Explicação**: Executa 3 chamadas sequencialmente (tempo total ≈ 6s)
+- **Resposta**:
+```json
+{
+    "modo": "síncrono",
+    "resultados": ["Resultado após 1s", "Resultado após 2s", "Resultado após 3s"],
+    "tempo_total": 6.023,
+    "explicacao": "Chamadas executadas uma após a outra"
+}
+```
+
+**Ganho de Performance**: O endpoint assíncrono é 2x mais rápido por executar as chamadas em paralelo!
+
 ## 📋 Requisitos
 
 - Python 3.x
